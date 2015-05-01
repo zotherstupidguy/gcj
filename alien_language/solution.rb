@@ -30,7 +30,8 @@ def algo line
   else
     p "================================="
     p line
-    p  line.to_s.scan (/ \(\w+\) /)
+    #p  line.to_s.gsub (/ \(\w+\) /, ' ')  # Additional regex  /\(([^)]+)\)/
+    p  "sfsf(hi)dfsfsf(bye)fsf".gsub (/ \(\w+\)/) # test
     p "================================="
   end
 end
