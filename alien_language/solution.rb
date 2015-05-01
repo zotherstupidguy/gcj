@@ -1,5 +1,5 @@
 #!/usr/bin/ruby
-#
+
 @input = "A-small-practice.in"
 
 @L, @D, @N = File.foreach(@input).first.chomp.split(" ")
@@ -21,18 +21,17 @@ end
 @words = []
 
 IO.readlines(@input)[1..@D].each do |line| 
-  #print line
   @words << line.chomp
 end
 
 def algo line
   if line.length == @L && (@words.include? line)
-   output line.length, 1
+    output line.length, 1
   else
-    #line.gsub 
-    #line.delete!("(")
-    #line.delete!(")")
+    p "================================="
     p line
+    p  line.to_s.scan (/ \(\w+\) /)
+    p "================================="
   end
 end
 
