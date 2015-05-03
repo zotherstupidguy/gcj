@@ -9,10 +9,10 @@
 @N = @N.to_i
 
 
-def output x, k 
+def output x, k
   output = File.open("output_small.txt", "a")
   output.puts "Case ##{x}: #{k}"
-  output.close   
+  output.close
 end
 
 # D is the number of words in the language
