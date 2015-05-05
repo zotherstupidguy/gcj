@@ -1,4 +1,3 @@
-=begin
 Problem
 
 After years of study, scientists at Google Labs have discovered an alien language transmitted from a faraway planet. The alien language is very unique in that every word consists of exactly L lowercase letters. Also, there are exactly D words in this language.
@@ -52,4 +51,3 @@ Case #2: 1
 Case #3: 3
 Case #4: 0
 
-=end
