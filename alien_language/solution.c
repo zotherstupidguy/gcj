@@ -20,6 +20,6 @@ void insert(node ** tree, node * item) {
 };
 
 void printout(node * tree) {
-if (tree -> left) printout (tree -> left);
-printf(
-}
+  if (tree -> left) printout (tree -> left);
+  printf(
+      }
