@@ -51,3 +51,22 @@ Case #2: 1
 Case #3: 3
 Case #4: 0
 
+
+Code Analysis
+
+First we store all the words in a 2 dimensional array.
+After that, we read each pattern, parse it, and count how many words match.
+
+One possible way of storing a pattern is a 2 dimensional array P[15][26]. P[i][j] is True only if the i-th token contains the j-th letter of the alphabet, otherwise False. In other words, P[i] is a bitmap of the letters contained by the i-th token.
+
+Parsing can be done like this:
+- read one character c
+- if c is '(', read characters until we hit ')'. The characters read are the token.
+else the token is the character c
+- populate P[i] for the characters in the token
+
+To count how many words match, we make sure that each letter i from the word is contained in the bitmap P[i].
+
+Total complexity is O(N * L * D).
+
+In some programming languages this can solved by transforming the pattern into a regular expression. For instance in python replace '(' and ')' with '[' and ']'.
